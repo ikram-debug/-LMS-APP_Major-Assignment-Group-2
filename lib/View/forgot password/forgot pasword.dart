@@ -30,7 +30,7 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [
+                children: [git add .
                   SizedBox(
                     child: Image.asset(
                       'assets/Logo.png',
