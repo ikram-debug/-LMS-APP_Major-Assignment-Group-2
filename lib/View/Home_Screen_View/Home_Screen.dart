@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import '../../Core/Constants/Constans.dart';
 import '../../Core/Widgets/Custom_ListTile.dart';
+import '../Student_HandBook_Screen/Student_HandBook_View.dart';
 import 'Widgets/Home_Card.dart';
 import 'Widgets/Student_Data.dart';
 
@@ -362,8 +363,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
               sizebox: 40,
               text: 'Student HandBook',
               onTap: () {
-                // Navigator.pushNamedAndRemoveUntil(context, StudentHandbookView.routeName, (route) => true
-                // );
+                Navigator.pushNamedAndRemoveUntil(context, StudentHandbookView.routeName, (route) => true
+                );
               },
             ),
             Divider(
