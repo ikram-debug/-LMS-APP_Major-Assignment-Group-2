@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import '../../Core/Constants/Constans.dart';
-import '../../Core/Widgets/Custom_Button1.dart';
-import '../forgot password/forgot pasword.dart';
 
 late bool _passwordVisible;
 
@@ -51,13 +49,13 @@ class _LoginScreenViewState extends State<LoginScreenView> {
                         ),
                         Align(
                           alignment: Alignment.bottomRight,
-                           child: CustomInkWellButton(
-                             text: 'Forgot Password?',
-                            onPressed:() {
-                              Navigator.pushNamedAndRemoveUntil(context, ForgotPasswordView.routeName, (route) =>true);
-                            },
-                             fontsize: 14,
-                           ),
+                          // child: CustomInkWellButton(
+                          //   text: 'Forgot Password?',
+                          //   onPressed:() {
+                          //     Navigator.pushNamedAndRemoveUntil(context, ForgotPasswordView.routeName, (route) =>true);
+                          //   },
+                          //   fontsize: 14,
+                          // ),
                         ),
                         sizedBox,
                         // DefaultButton(
