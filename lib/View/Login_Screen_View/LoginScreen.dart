@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import '../../Core/Constants/Constans.dart';
+import '../../Core/Widgets/Custom_Button1.dart';
+import '../../Core/Widgets/Custom_Button2.dart';
+import '../Forget_Password_Screesn_View/Forget_Password_Screen.dart';
+import '../Home_Screen_View/Home_Screen.dart';
 
 late bool _passwordVisible;
 
@@ -49,23 +53,23 @@ class _LoginScreenViewState extends State<LoginScreenView> {
                         ),
                         Align(
                           alignment: Alignment.bottomRight,
-                          // child: CustomInkWellButton(
-                          //   text: 'Forgot Password?',
-                          //   onPressed:() {
-                          //     Navigator.pushNamedAndRemoveUntil(context, ForgotPasswordView.routeName, (route) =>true);
-                          //   },
-                          //   fontsize: 14,
-                          // ),
+                          child: CustomInkWellButton(
+                            text: 'Forgot Password?',
+                            onPressed:() {
+                              Navigator.pushNamedAndRemoveUntil(context, ForgotPasswordView.routeName, (route) =>true);
+                            },
+                            fontsize: 14,
+                          ),
                         ),
                         sizedBox,
-                        // DefaultButton(
-                        //   onPress: () {if (_formkey.currentState!.validate()) {
-                        //     Navigator.pushNamedAndRemoveUntil(context,
-                        //         HomeScreenView.routeName, (route) => false);
-                        //   }
-                        //   },
-                        //   title: 'Login',
-                        // ),
+                        DefaultButton(
+                          onPress: () {if (_formkey.currentState!.validate()) {
+                            Navigator.pushNamedAndRemoveUntil(context,
+                                HomeScreenView.routeName, (route) => false);
+                          }
+                          },
+                          title: 'Login',
+                        ),
                         sizedBox,
                         Align(
                             alignment: Alignment.bottomLeft,
