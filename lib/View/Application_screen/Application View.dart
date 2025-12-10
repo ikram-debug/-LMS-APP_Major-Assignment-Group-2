@@ -4,6 +4,7 @@ import '../../Core/Constants/Constans.dart';
 import '../../Core/Widgets/Custom_Button2.dart';
 import '../Home_Screen_View/Home_Screen.dart';
 import '../Home_Screen_View/Widgets/Student_Data.dart';
+import 'View_Application_Screen/View_Application..dart';
 
 class ApplicationView extends StatefulWidget {
   static String routeName = 'ApplicationView';
@@ -83,10 +84,10 @@ class _ApplicationViewState extends State<ApplicationView> {
                                 ),
                               ),
                             ),
-                           // onTap: () {
-                            //  Navigator.pushNamedAndRemoveUntil(context, ViewApplication.routeName, (route) => true,
-                              //);
-                          //  },
+                           onTap: () {
+                             Navigator.pushNamedAndRemoveUntil(context, ViewApplication.routeName, (route) => true,
+                              );
+                           },
                           ),
                           SizedBox(
                             height: 10,

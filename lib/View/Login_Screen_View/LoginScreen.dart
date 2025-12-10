@@ -3,8 +3,9 @@ import 'package:sizer/sizer.dart';
 import '../../Core/Constants/Constans.dart';
 import '../../Core/Widgets/Custom_Button1.dart';
 import '../../Core/Widgets/Custom_Button2.dart';
-import '../Forget_Password_Screesn_View/Forget_Password_Screen.dart';
+import '../Forgot_Password_Screen/Forgot Fasword_View.dart';
 import '../Home_Screen_View/Home_Screen.dart';
+
 
 late bool _passwordVisible;
 

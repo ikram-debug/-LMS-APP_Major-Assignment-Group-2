@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import '../../Core/Constants/Constans.dart';
 import '../../Core/Widgets/Custom_ListTile.dart';
+import '../Application_screen/Application View.dart';
+import '../Login_Screen_View/LoginScreen.dart';
 import '../Student_HandBook_Screen/Student_HandBook_View.dart';
 import 'Widgets/Home_Card.dart';
 import 'Widgets/Student_Data.dart';
@@ -384,7 +386,7 @@ class _HomeScreenViewState extends State<HomeScreenView> {
               sizebox: 40,
               text: 'Sign Out',
               onTap: () {
-                // Navigator.pushNamedAndRemoveUntil(context, LoginScreenView.routesName, (route) => false);
+                Navigator.pushNamedAndRemoveUntil(context, LoginScreenView.routesName, (route) => false);
               },
             ),
           ],
@@ -520,8 +522,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                           icon: 'assets/Application.svg',
                           title: 'Applications',
                           onpress: () {
-                            // Navigator.pushNamedAndRemoveUntil(context, ApplicationView.routeName, (route) => true
-                            // );
+                            Navigator.pushNamedAndRemoveUntil(context, ApplicationView.routeName, (route) => true
+                            );
                           },
                         )
                       ],
@@ -584,8 +586,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                           icon: 'assets/logout.svg',
                           title: 'Sign Out',
                           onpress: () {
-                            // Navigator.pushNamedAndRemoveUntil(context, LoginScreenView.routesName, (route) => true
-                            // );
+                            Navigator.pushNamedAndRemoveUntil(context, LoginScreenView.routesName, (route) => true
+                            );
                           },
                         )
                       ],
