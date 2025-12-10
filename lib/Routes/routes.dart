@@ -3,6 +3,7 @@ import "package:flutter/material.dart";
 
 import "../View/Application_screen/Application View.dart";
 import "../View/Application_screen/View_Application_Screen/View_Application..dart";
+import "../View/Forms/Student_Affidavit/Student_Affidavit.dart";
 import "../View/Home_Screen_View/Home_Screen.dart";
 import "../View/Login_Screen_View/LoginScreen.dart";
 import "../View/Splash_Screen_View/SplashScreen.dart";
@@ -18,5 +19,6 @@ Map<String,WidgetBuilder> routes = {
   StudentHandbookView.routeName :(Context) => StudentHandbookView(),
   ApplicationView.routeName :(Context) => ApplicationView(),
   ViewApplication.routeName :(Context) => ViewApplication(),
+  StudentAffidavitView.routeName :(Context) => StudentAffidavitView(),
   //Ikram-debug set
 };

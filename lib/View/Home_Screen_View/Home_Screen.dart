@@ -3,6 +3,7 @@ import 'package:sizer/sizer.dart';
 import '../../Core/Constants/Constans.dart';
 import '../../Core/Widgets/Custom_ListTile.dart';
 import '../Application_screen/Application View.dart';
+import '../Forms/Student_Affidavit/Student_Affidavit.dart';
 import '../Login_Screen_View/LoginScreen.dart';
 import '../Student_HandBook_Screen/Student_HandBook_View.dart';
 import 'Widgets/Home_Card.dart';
@@ -282,8 +283,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 25,
                         text: 'Student Affidavit',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(context, StudentAffidavitView.routeName, (route) => true
-                          // );
+                          Navigator.pushNamedAndRemoveUntil(context, StudentAffidavitView.routeName, (route) => true
+                          );
                         },
                       ),
                     ],

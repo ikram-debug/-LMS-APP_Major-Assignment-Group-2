@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:pmdc1/View/Home_Screen/Widgets/Student_Data.dart';
-import 'package:pmdc1/View/Profile_Screen/Profile_Screen_View.dart';
-import 'package:pmdc1/constant.dart';
+
+import '../../../Core/Constants/Constans.dart';
+
 
 class StudentAffidavitView extends StatefulWidget {
   static String routeName = 'StudentAffidavitView';
