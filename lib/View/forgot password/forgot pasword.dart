@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-
 import '../../Core/Constants/Constans.dart';
 import '../../Core/Widgets/Custom_Button1.dart';
 import '../../Core/Widgets/Custom_Button2.dart';
@@ -30,7 +29,7 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: [git add .
+                children: [
                   SizedBox(
                     child: Image.asset(
                       'assets/Logo.png',
