@@ -5,7 +5,6 @@ import '../../Core/Widgets/Custom_Button1.dart';
 import '../../Core/Widgets/Custom_Button2.dart';
 import '../Login_Screen_View/LoginScreen.dart';
 
-
 class ForgotPasswordView extends StatefulWidget {
   static String routeName = 'ForgotPasswordView';
 
@@ -14,8 +13,8 @@ class ForgotPasswordView extends StatefulWidget {
 }
 
 class _ForgotPasswordViewState extends State<ForgotPasswordView> {
-
-  final _formkey = GlobalKey<FormState>();
+  final _formKey = GlobalKey<FormState>();
+  final TextEditingController idController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -24,39 +23,33 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
       child: Scaffold(
         body: Column(
           children: [
+            // TOP SECTION
             Container(
               height: 40.h,
               width: 100.w,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(
-                    child: Image.asset(
-                      'assets/Logo.png',
-                      color: kTextWhiteColor,
-                    ),
-                    height: 150,
-                    width: 150,
+                  Image.asset(
+                    'assets/Logo.png',
+                    height: 120,
+                    width: 120,
+                    color: kTextWhiteColor,
                   ),
-                  SizedBox(
-                    height: 5,
-                  ),
+                  SizedBox(height: 10),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         'Forgot',
-                        style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                        style: Theme.of(context).textTheme.bodySmall?.copyWith(
                           fontSize: 20,
                         ),
                       ),
-                      SizedBox(
-                        width: 5,
-                      ),
+                      SizedBox(width: 5),
                       Text(
                         'Password?',
-                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                        style: Theme.of(context).textTheme.bodyLarge?.copyWith(
                           fontSize: 20,
                         ),
                       ),
@@ -67,77 +60,93 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
                     style: Theme.of(context).textTheme.titleSmall?.copyWith(
                       fontSize: 12,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
+
+            // FORM SECTION
             Expanded(
               child: Container(
-                padding: EdgeInsets.only(top: 30,left: 30,right: 30),
+                padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 25),
                 decoration: BoxDecoration(
                   color: kTextWhiteColor,
                   borderRadius: kTopBorderRadius,
                 ),
                 child: Form(
-                  key: _formkey,
-                  child:SingleChildScrollView(
+                  key: _formKey,
+                  child: SingleChildScrollView(
                     child: Column(
                       children: [
-                        sizedBox,
+                        SizedBox(height: 15),
                         buildIDTextFormField(),
-                        sizedBox,
-                        DefaultButton(onPress: () {},
+
+                        SizedBox(height: 20),
+
+                        DefaultButton(
+                          onPress: () {
+                            if (_formKey.currentState!.validate()) {
+                              // ADD YOUR PASSWORD SENDING LOGIC HERE
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text("Password sent successfully!")),
+                              );
+                            }
+                          },
                           title: 'Send Password',
                         ),
-                        sizedBox,
+
+                        SizedBox(height: 20),
+
+                        // LOGIN REDIRECT
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Text(
+                              'Remembered Password?',
+                              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                fontSize: 12,
+                                color: kTextBlackColor,
+                              ),
+                            ),
+                            SizedBox(width: 5),
+                            CustomInkWellButton(
+                              text: 'Login',
+                              onPressed: () {
+                                Navigator.pushNamedAndRemoveUntil(
+                                  context,
+                                  LoginScreenView.routesName,
+                                      (route) => false,
+                                );
+                              },
+                              fontsize: 12,
+                            ),
+                          ],
+                        ),
+
+                        SizedBox(height: 20),
+
+                        // SUPPORT INFO
                         Align(
-                          alignment: Alignment.bottomRight,
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.end,
+                          alignment: Alignment.bottomLeft,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Rememberd Password',
-                                style: Theme.of(context).textTheme.bodySmall!.copyWith(
+                                'For any query email us at',
+                                style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                  fontSize: 12,
+                                  color: kPrimaryColor,
+                                ),
+                              ),
+                              Text(
+                                'info@pmdc.edu.pk',
+                                style: Theme.of(context).textTheme.bodySmall?.copyWith(
                                   fontSize: 12,
                                   color: kTextBlackColor,
                                 ),
                               ),
-                              SizedBox(
-                                width: 5,
-                              ),
-                              CustomInkWellButton(
-                                text: 'Login?',
-                                onPressed: () {
-                                  Navigator.pushNamedAndRemoveUntil(context, LoginScreenView.routesName, (route)=>false
-                                  );
-                                },
-                                fontsize: 12,
-                              ),
                             ],
                           ),
-                        ),
-                        sizedBox,
-                        Align(
-                            alignment: Alignment.bottomLeft,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'For any query email us at',
-                                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                                    fontSize: 12,
-                                    color: kPrimaryColor,
-                                  ),
-                                ),
-                                Text(
-                                  'info@pmdc.edu.pk ',
-                                  style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                                    fontSize: 12,
-                                    color: kTextBlackColor,
-                                  ),
-                                ),
-                              ],
-                            )
                         ),
                       ],
                     ),
@@ -151,22 +160,22 @@ class _ForgotPasswordViewState extends State<ForgotPasswordView> {
     );
   }
 
+  // TEXT FIELD
   TextFormField buildIDTextFormField() {
     return TextFormField(
+      controller: idController,
       textAlign: TextAlign.start,
       keyboardType: TextInputType.number,
       style: kInputTextStyle,
       decoration: InputDecoration(
-        labelText: 'Enter Your ID', // Typo fixed
+        labelText: 'Enter Your ID',
         prefixIcon: Icon(Icons.person),
         prefixIconColor: kPrimaryColor,
-        floatingLabelBehavior: FloatingLabelBehavior.auto,
       ),
       validator: (value) {
         if (value == null || value.isEmpty) {
           return 'Enter ID';
-        }
-        else if (!RegExp(r'^[0-9]+$').hasMatch(value)) {
+        } else if (!RegExp(r'^[0-9]+$').hasMatch(value)) {
           return 'Only numbers are allowed';
         }
         return null;
