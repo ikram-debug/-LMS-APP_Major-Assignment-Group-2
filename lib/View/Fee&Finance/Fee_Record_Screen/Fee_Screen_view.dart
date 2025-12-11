@@ -7,7 +7,7 @@ import 'Widgets/Custom_Button.dart';
 import 'Widgets/Custom_Row.dart';
 
 class FeeScreenView extends StatefulWidget {
-  static String routName = 'FeeScreenView';
+  static String routeName = 'FeeScreenView';
 
   @override
   State<FeeScreenView> createState() => _FeeScreenViewState();

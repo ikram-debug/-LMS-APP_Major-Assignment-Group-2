@@ -3,8 +3,12 @@ import 'package:sizer/sizer.dart';
 import '../../Core/Constants/Constans.dart';
 import '../../Core/Widgets/Custom_ListTile.dart';
 import '../Application_screen/Application View.dart';
+import '../Change_Password_Screen/Change_Passoword_View.dart';
 import '../Examination/Date_Sheet_Screen/Date_Sheet_Screen.dart';
 import '../Examination/Examination_View.dart';
+import '../Fee&Finance/Fee_Record_Screen/Fee_Screen_view.dart';
+import '../Fee&Finance/Fee_Schedule_Screen/Fee_Schedule_Screen_view.dart';
+import '../Fee&Finance/Samister_Registration_Screen/Samister_Registration_View.dart';
 import '../Forms/Student_Affidavit/Student_Affidavit.dart';
 import '../LMS_Notificstion-Screen/LMS_Notification_View.dart';
 import '../Login_Screen_View/LoginScreen.dart';
@@ -226,8 +230,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 25,
                         text: 'Fee Shedule',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(context, FeeScheduleView.routeName, (route) => true
-                          // );
+                          Navigator.pushNamedAndRemoveUntil(context, FeeScheduleView.routeName, (route) => true
+                          );
                         },
                       ),
                       CustomListTile(
@@ -235,8 +239,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 25,
                         text: 'Fee Record',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(context, FeeScreenView.routName, (route) => true
-                          // );
+                          Navigator.pushNamedAndRemoveUntil(context, FeeScreenView.routeName, (route) => true
+                          );
                         },
                       ),
                       CustomListTile(
@@ -244,8 +248,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 25,
                         text: 'Samestar Registration',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(context, SemestartRegistrationView.routeName, (route) => true
-                          // );
+                          Navigator.pushNamedAndRemoveUntil(context, SemestartRegistrationView.routeName, (route) => true
+                          );
                         },
                       ),
                     ],
@@ -383,7 +387,7 @@ class _HomeScreenViewState extends State<HomeScreenView> {
               sizebox: 40,
               text: 'Change Password',
               onTap: () {
-                // Navigator.pushNamedAndRemoveUntil(context, ChangePasswordView.routeName, (route) => true);
+                Navigator.pushNamedAndRemoveUntil(context, ChangePasswordView.routeName, (route) => true);
               },
             ),
             CustomListTile(
@@ -583,8 +587,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                           icon: 'assets/fee.svg',
                           title: 'Fee Record',
                           onpress: () {
-                            // Navigator.pushNamedAndRemoveUntil(context,FeeScreenView.routName, (route) => true
-                            // );
+                            Navigator.pushNamedAndRemoveUntil(context,FeeScreenView.routeName, (route) => true
+                            );
                           },
                         ),
                         HomeCard(

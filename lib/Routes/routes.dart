@@ -1,14 +1,16 @@
 import "package:flutter/material.dart";
-
-
 import "../View/Application_screen/Application View.dart";
 import "../View/Application_screen/View_Application_Screen/View_Application..dart";
+import "../View/Change_Password_Screen/Change_Passoword_View.dart";
 import "../View/Examination/Date_Sheet_Screen/Date_Sheet_Screen.dart";
 import "../View/Examination/Examination_Screen/Detail_Screen/Class_6th_Result.dart";
 import "../View/Examination/Examination_Screen/Detail_Screen/Class_7th_Result.dart";
 import "../View/Examination/Examination_Screen/Detail_Screen/Class_8th_Result.dart";
 import "../View/Examination/Examination_Screen/Detail_Screen/Class_9th_Result.dart";
 import "../View/Examination/Examination_View.dart" show ExaminationView;
+import "../View/Fee&Finance/Fee_Record_Screen/Fee_Screen_view.dart";
+import "../View/Fee&Finance/Fee_Schedule_Screen/Fee_Schedule_Screen_view.dart";
+import "../View/Fee&Finance/Samister_Registration_Screen/Samister_Registration_View.dart";
 import "../View/Forms/Student_Affidavit/Student_Affidavit.dart";
 import "../View/Home_Screen_View/Home_Screen.dart";
 import "../View/LMS_Notificstion-Screen/LMS_Notification_View.dart";
@@ -36,5 +38,9 @@ Map<String,WidgetBuilder> routes = {
   Cls9thResult.routeName :(Context) => Cls9thResult(),
   DateScheetScreenView.routeName :(Context) => DateScheetScreenView(),
   ExaminationView.routeName :(Context) => ExaminationView(),
+  FeeScreenView.routeName :(Context) => FeeScreenView(),
+  FeeScheduleView.routeName :(Context) => FeeScheduleView(),
+  SemestartRegistrationView.routeName :(Context) => SemestartRegistrationView(),
+  ChangePasswordView.routeName :(Context) => ChangePasswordView(),
   //Ikram-debug set
 };
