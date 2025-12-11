@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
 
+import '../../../../Core/Constants/Constans.dart';
 
-import '../../Core/Constants/Constans.dart';
-
-class FeeScheduleView extends StatefulWidget {
-  static String routeName = 'FeeScheduleView';
+class Cls7thResult extends StatefulWidget {
+  static String routeName = 'Cls7thResult';
 
   @override
-  State<FeeScheduleView> createState() => _FeeScheduleViewState();
+  State<Cls7thResult> createState() => _Cls7thResultState();
 }
 
-class _FeeScheduleViewState extends State<FeeScheduleView> {
+class _Cls7thResultState extends State<Cls7thResult> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +20,7 @@ class _FeeScheduleViewState extends State<FeeScheduleView> {
           color: kTextWhiteColor,
         ),
         title: Text(
-          'File',
+          'DMC',
           style: Theme.of(context).textTheme.headlineSmall!.copyWith(
             fontSize: 20,
           ),
@@ -29,11 +28,10 @@ class _FeeScheduleViewState extends State<FeeScheduleView> {
       ),
       body: Container(
         color: kTextWhiteColor,
+        padding: EdgeInsets.all(8.0),
         child: Center(
-          child: SizedBox(
-            height: 500,
-            width: double.infinity,
-            child: Image.asset('assets/Fee_Schedule.jpeg'),
+          child: Image.asset(
+              'assets/DMC.jpg'
           ),
         ),
       ),

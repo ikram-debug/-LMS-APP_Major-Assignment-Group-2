@@ -3,6 +3,12 @@ import "package:flutter/material.dart";
 
 import "../View/Application_screen/Application View.dart";
 import "../View/Application_screen/View_Application_Screen/View_Application..dart";
+import "../View/Examination/Date_Sheet_Screen/Date_Sheet_Screen.dart";
+import "../View/Examination/Examination_Screen/Detail_Screen/Class_6th_Result.dart";
+import "../View/Examination/Examination_Screen/Detail_Screen/Class_7th_Result.dart";
+import "../View/Examination/Examination_Screen/Detail_Screen/Class_8th_Result.dart";
+import "../View/Examination/Examination_Screen/Detail_Screen/Class_9th_Result.dart";
+import "../View/Examination/Examination_View.dart" show ExaminationView;
 import "../View/Forms/Student_Affidavit/Student_Affidavit.dart";
 import "../View/Home_Screen_View/Home_Screen.dart";
 import "../View/LMS_Notificstion-Screen/LMS_Notification_View.dart";
@@ -24,5 +30,11 @@ Map<String,WidgetBuilder> routes = {
   StudentAffidavitView.routeName :(Context) => StudentAffidavitView(),
   SmsNotificationView.routeName :(Context) => SmsNotificationView(),
   LmsNotificationView.routeName :(Context) => LmsNotificationView(),
+  Cls6thResult.routeName :(Context) => Cls6thResult(),
+  Cls7thResult.routeName :(Context) => Cls7thResult(),
+  Cls8thResult.routeName :(Context) => Cls8thResult(),
+  Cls9thResult.routeName :(Context) => Cls9thResult(),
+  DateScheetScreenView.routeName :(Context) => DateScheetScreenView(),
+  ExaminationView.routeName :(Context) => ExaminationView(),
   //Ikram-debug set
 };

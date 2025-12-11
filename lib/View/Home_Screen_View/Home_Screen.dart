@@ -3,6 +3,8 @@ import 'package:sizer/sizer.dart';
 import '../../Core/Constants/Constans.dart';
 import '../../Core/Widgets/Custom_ListTile.dart';
 import '../Application_screen/Application View.dart';
+import '../Examination/Date_Sheet_Screen/Date_Sheet_Screen.dart';
+import '../Examination/Examination_View.dart';
 import '../Forms/Student_Affidavit/Student_Affidavit.dart';
 import '../LMS_Notificstion-Screen/LMS_Notification_View.dart';
 import '../Login_Screen_View/LoginScreen.dart';
@@ -549,16 +551,16 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                           icon: 'assets/exam.svg',
                           title: 'Examination',
                           onpress: () {
-                            // Navigator.pushNamedAndRemoveUntil(context, ExaminationView.routeName, (route) => true
-                            // );
+                            Navigator.pushNamedAndRemoveUntil(context, ExaminationView.routeName, (route) => true
+                            );
                           },
                         ),
                         HomeCard(
                           icon: 'assets/datesheet.svg',
                           title: 'DateSheet',
                           onpress: () {
-                            // Navigator.pushNamedAndRemoveUntil(context, DateScheetScreenView.routeName, (route) =>true
-                            // );
+                            Navigator.pushNamedAndRemoveUntil(context, DateScheetScreenView.routeName, (route) =>true
+                            );
                           },
                         )
                       ],

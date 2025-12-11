@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pmdc1/View/Fee&Finance/Fee_Record_Screen/Widget/Custom_Button.dart';
-import 'package:pmdc1/View/Fee&Finance/Fee_Record_Screen/Widget/Custom_Row.dart';
-import 'package:pmdc1/View/Home_Screen/Widgets/Student_Data.dart';
-import 'package:pmdc1/View/Profile_Screen/Profile_Screen_View.dart';
-import 'package:pmdc1/constant.dart';
-
-import '../../../Models/Fee_Data.dart';
 import '../../Core/Constants/Constans.dart';
+import '../../Model/Fee_Data.dart';
 import '../Home_Screen_View/Widgets/Student_Data.dart';
 import 'Widgets/Custom_Button.dart';
 import 'Widgets/Custom_Row.dart';
@@ -51,9 +45,9 @@ class _FeeScreenViewState extends State<FeeScreenView> {
                 StudentFiled: 'Pre Engineering',
                 StudentPic: 'assets/Profile.jpeg',
                 onpress: () {
-                  Navigator.pushNamedAndRemoveUntil(
-                      context, ProfileScreenView.routeName, (route) => true
-                  );
+                  // Navigator.pushNamedAndRemoveUntil(
+                  //     context, ProfileScreenView.routeName, (route) => true
+                  // );
                 }
             ),
             Expanded(
