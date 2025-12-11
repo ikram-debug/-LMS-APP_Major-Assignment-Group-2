@@ -5,7 +5,8 @@ import '../../Core/Widgets/Custom_ListTile.dart';
 import '../Application_screen/Application View.dart';
 import '../Change_Password_Screen/Change_Passoword_View.dart';
 import '../Examination/Date_Sheet_Screen/Date_Sheet_Screen.dart';
-import '../Examination/Examination_View.dart';
+import '../Examination/Examination_Screen/Examination_View.dart';
+import '../Examination/UMF_Notice_Screen/UFM_Notice_View.dart';
 import '../Fee&Finance/Fee_Record_Screen/Fee_Screen_view.dart';
 import '../Fee&Finance/Fee_Schedule_Screen/Fee_Schedule_Screen_view.dart';
 import '../Fee&Finance/Samister_Registration_Screen/Samister_Registration_View.dart';
@@ -13,6 +14,9 @@ import '../Forms/Student_Affidavit/Student_Affidavit.dart';
 import '../LMS_Notificstion-Screen/LMS_Notification_View.dart';
 import '../Login_Screen_View/LoginScreen.dart';
 import '../My_Class_Screen/Attendence_Screen/Attendence Screen View.dart';
+import '../My_Class_Screen/Courses_Screen/Courses_Screen_View.dart';
+import '../My_Class_Screen/Query_Screen/Queries_Screen_View.dart';
+import '../My_Class_Screen/Time_Table_Screen/Time_Table_Screen_View.dart';
 import '../Profile_Screen_View/Profile_Screen.dart';
 import '../SMS_Notification_Screen/SMS_Notification_View.dart';
 import '../Student_HandBook_Screen/Student_HandBook_View.dart';
@@ -160,8 +164,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 20,
                         text: 'Courses',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(
-                          //     context, CoursesView.routeName, (route) => true);
+                          Navigator.pushNamedAndRemoveUntil(
+                              context, CoursesView.routeName, (route) => true);
                         },
                       ),
                       CustomListTile(
@@ -169,8 +173,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         text: 'Time Table',
                         sizebox: 20,
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(
-                          //     context, TimeTableView.routeName, (route) => true);
+                          Navigator.pushNamedAndRemoveUntil(
+                              context, TimeTableView.routeName, (route) => true);
                         },
                       ),
 
@@ -179,8 +183,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 20,
                         text: 'Attendence',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(
-                          //     context, AttendenceView.routeName, (route) => true);
+                          Navigator.pushNamedAndRemoveUntil(
+                              context, AttendenceView.routeName, (route) => true);
                         },
                       ),
 
@@ -189,8 +193,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 20,
                         text: 'Student Quries',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(
-                          //     context, QuriesScreenView.routeName, (route) => true);
+                          Navigator.pushNamedAndRemoveUntil(
+                              context, QuriesScreenView.routeName, (route) => true);
                         },
                       ),
                     ],
@@ -335,8 +339,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 25,
                         text: 'UFM Notice',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(context, UfmNoticeView.routeName, (route) => true
-                          // );
+                          Navigator.pushNamedAndRemoveUntil(context, UfmNoticeView.routeName, (route) => true
+                          );
                         },
                       ),
                       CustomListTile(
@@ -344,8 +348,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 25,
                         text: 'Date Sheet',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(context, DateScheetScreenView.routeName, (route) => true
-                          // );
+                          Navigator.pushNamedAndRemoveUntil(context, DateScheetScreenView.routeName, (route) => true
+                          );
                         },
                       ),
                       CustomListTile(
@@ -353,8 +357,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 25,
                         text: 'Transcript',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(context, ExaminationView.routeName, (route) => true
-                          // );
+                          Navigator.pushNamedAndRemoveUntil(context, ExaminationView.routeName, (route) => true
+                          );
                         },
                       ),
                     ],
@@ -367,8 +371,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
               sizebox: 40,
               text: 'Application',
               onTap: () {
-                // Navigator.pushNamedAndRemoveUntil(context, ApplicationView.routeName, (route) => true
-                // );
+                Navigator.pushNamedAndRemoveUntil(context, ApplicationView.routeName, (route) => true
+                );
               },
             ),
             CustomListTile(
@@ -518,7 +522,7 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                           icon: 'assets/timetable.svg',
                           title: 'Time Table',
                           onpress: () {
-                            // Navigator.pushNamed(context, TimeTableView.routeName);
+                            Navigator.pushNamed(context, TimeTableView.routeName);
                           },
                         ),
                         HomeCard(
@@ -549,8 +553,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                           icon: 'assets/Courses.svg',
                           title: 'courses',
                           onpress: () {
-                            // Navigator.pushNamedAndRemoveUntil(context, CoursesView.routeName, (route) => true
-                            // );
+                            Navigator.pushNamedAndRemoveUntil(context, CoursesView.routeName, (route) => true
+                            );
                           },
                         ),
                         HomeCard(
@@ -581,8 +585,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                           icon: 'assets/resume.svg',
                           title: 'Quries',
                           onpress: () {
-                            // Navigator.pushNamedAndRemoveUntil(context, QuriesScreenView.routeName, (route) => true
-                            // );
+                            Navigator.pushNamedAndRemoveUntil(context, QuriesScreenView.routeName, (route) => true
+                            );
                           },
                         ),
                         HomeCard(

@@ -1,0 +1,70 @@
+import 'package:flutter/material.dart';
+
+
+import '../../../Core/Constants/Constans.dart';
+import '../../Home_Screen_View/Home_Screen.dart';
+import '../../Home_Screen_View/Widgets/Student_Data.dart';
+
+class CoursesView extends StatefulWidget {
+  static String routeName = 'CoursesView';
+
+  @override
+  State<CoursesView> createState() => _CoursesViewState();
+}
+
+class _CoursesViewState extends State<CoursesView> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          backgroundColor: kPrimaryColor,
+          centerTitle: true,
+          iconTheme: IconThemeData(
+            color: kTextWhiteColor,
+          ),
+          title: Text(
+            'PMDC',
+            style: Theme.of(context).textTheme.headlineSmall!.copyWith(
+              fontSize: 20,
+              color: kTextWhiteColor,
+            ),
+          ),
+        ),
+        body: Container(
+          color: kOtherColor,
+          child: Column(
+            children: [
+              StudentData(
+                  StudentName: 'IKROO DEV',
+                  StudentRollNo: '12',
+                  StudentFiled: 'Pre-Engineering',
+                  StudentPic: 'assets/Profile.jpeg',
+                  onpress: () {
+                    Navigator.pushNamedAndRemoveUntil(context, HomeScreenView.routeName, (route) => true
+                    );
+                  }
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding:EdgeInsets.all(16.0),
+                    child: Column(
+                      children: [
+                        Text(
+                          'Courses Screen',
+                          style: TextStyle(
+                            fontSize: 30,
+                            color: kTextBlackColor,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        )
+    );
+  }
+}

@@ -7,7 +7,8 @@ import "../View/Examination/Examination_Screen/Detail_Screen/Class_6th_Result.da
 import "../View/Examination/Examination_Screen/Detail_Screen/Class_7th_Result.dart";
 import "../View/Examination/Examination_Screen/Detail_Screen/Class_8th_Result.dart";
 import "../View/Examination/Examination_Screen/Detail_Screen/Class_9th_Result.dart";
-import "../View/Examination/Examination_View.dart" show ExaminationView;
+import "../View/Examination/Examination_Screen/Examination_View.dart" show ExaminationView;
+import "../View/Examination/UMF_Notice_Screen/UFM_Notice_View.dart";
 import "../View/Fee&Finance/Fee_Record_Screen/Fee_Screen_view.dart";
 import "../View/Fee&Finance/Fee_Schedule_Screen/Fee_Schedule_Screen_view.dart";
 import "../View/Fee&Finance/Samister_Registration_Screen/Samister_Registration_View.dart";
@@ -16,6 +17,10 @@ import "../View/Home_Screen_View/Home_Screen.dart";
 import "../View/LMS_Notificstion-Screen/LMS_Notification_View.dart";
 import "../View/Login_Screen_View/LoginScreen.dart";
 import "../View/My_Class_Screen/Attendence_Screen/Attendence Screen View.dart";
+import "../View/My_Class_Screen/Courses_Screen/Courses_Screen_View.dart";
+import "../View/My_Class_Screen/Query_Screen/Queries_Screen_View.dart";
+import "../View/My_Class_Screen/Query_Screen/Queries_View/Queries_View.dart";
+import "../View/My_Class_Screen/Time_Table_Screen/Time_Table_Screen_View.dart";
 import "../View/Profile_Screen_View/Profile_Screen.dart";
 import "../View/SMS_Notification_Screen/SMS_Notification_View.dart";
 import "../View/Splash_Screen_View/SplashScreen.dart";
@@ -46,6 +51,11 @@ Map<String,WidgetBuilder> routes = {
   ChangePasswordView.routeName :(Context) => ChangePasswordView(),
   ProfileScreenView.routeName :(Context) => ProfileScreenView(),
   AttendenceView.routeName :(Context) => AttendenceView(),
+  CoursesView.routeName :(Context) => CoursesView(),
+  QuriesView.routeName :(Context) => QuriesView(),
+  QuriesScreenView.routeName :(Context) => QuriesScreenView(),
+  TimeTableView.routeName :(Context) => TimeTableView(),
+  UfmNoticeView.routeName :(Context) => UfmNoticeView(),
 
   //Ikram-debug set
 };
