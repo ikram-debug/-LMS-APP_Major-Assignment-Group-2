@@ -4,7 +4,9 @@ import '../../Core/Constants/Constans.dart';
 import '../../Core/Widgets/Custom_ListTile.dart';
 import '../Application_screen/Application View.dart';
 import '../Forms/Student_Affidavit/Student_Affidavit.dart';
+import '../LMS_Notificstion-Screen/LMS_Notification_View.dart';
 import '../Login_Screen_View/LoginScreen.dart';
+import '../SMS_Notification_Screen/SMS_Notification_View.dart';
 import '../Student_HandBook_Screen/Student_HandBook_View.dart';
 import 'Widgets/Home_Card.dart';
 import 'Widgets/Student_Data.dart';
@@ -101,8 +103,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 40,
                         text: 'SMS Notification',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(context, SmsNotificationView.routeName, (route) => true
-                          // );
+                          Navigator.pushNamedAndRemoveUntil(context, SmsNotificationView.routeName, (route) => true
+                          );
                         },
                       ),
                       CustomListTile(
@@ -110,7 +112,7 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                         sizebox: 40,
                         text: 'LMS Notification',
                         onTap: () {
-                          // Navigator.pushNamedAndRemoveUntil(context, LmsNotificationView.routeName, (route) => true);
+                          Navigator.pushNamedAndRemoveUntil(context, LmsNotificationView.routeName, (route) => true);
                         },
                       ),
                     ],
@@ -430,8 +432,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                   children: [
                     InkWell(
                       onTap: () {
-                        // Navigator.pushNamedAndRemoveUntil(context, LmsNotificationView.routeName, (route) =>true
-                        // );
+                        Navigator.pushNamedAndRemoveUntil(context, LmsNotificationView.routeName, (route) =>true
+                        );
                       },
                       child: Card(
                         color: kPrimaryColor,

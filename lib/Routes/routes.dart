@@ -5,7 +5,9 @@ import "../View/Application_screen/Application View.dart";
 import "../View/Application_screen/View_Application_Screen/View_Application..dart";
 import "../View/Forms/Student_Affidavit/Student_Affidavit.dart";
 import "../View/Home_Screen_View/Home_Screen.dart";
+import "../View/LMS_Notificstion-Screen/LMS_Notification_View.dart";
 import "../View/Login_Screen_View/LoginScreen.dart";
+import "../View/SMS_Notification_Screen/SMS_Notification_View.dart";
 import "../View/Splash_Screen_View/SplashScreen.dart";
 import "../View/Student_HandBook_Screen/Student_HandBook_View.dart";
 import "../View/Forgot_Password_Screen/Forgot Fasword_View.dart";
@@ -20,5 +22,7 @@ Map<String,WidgetBuilder> routes = {
   ApplicationView.routeName :(Context) => ApplicationView(),
   ViewApplication.routeName :(Context) => ViewApplication(),
   StudentAffidavitView.routeName :(Context) => StudentAffidavitView(),
+  SmsNotificationView.routeName :(Context) => SmsNotificationView(),
+  LmsNotificationView.routeName :(Context) => LmsNotificationView(),
   //Ikram-debug set
 };
