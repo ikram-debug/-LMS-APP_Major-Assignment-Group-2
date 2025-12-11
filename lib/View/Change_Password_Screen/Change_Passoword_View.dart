@@ -4,6 +4,7 @@ import '../../Core/Constants/Constans.dart';
 import '../../Core/Widgets/Custom_Button2.dart';
 import '../Home_Screen_View/Home_Screen.dart';
 import '../Home_Screen_View/Widgets/Student_Data.dart';
+import '../Profile_Screen_View/Profile_Screen.dart';
 
 class ChangePasswordView extends StatefulWidget {
   static String routeName = 'ChangePasswordView';
@@ -46,11 +47,11 @@ class _ChangePasswordViewState extends State<ChangePasswordView> {
                 StudentFiled: 'Pre Engineering',
                 StudentPic: 'assets/Profile.jpeg',
                 onpress: () {
-                  // Navigator.pushNamedAndRemoveUntil(
-                  //   context,
-                  //   ProfileScreenView.routeName,
-                  //       (route) => true,
-                  // );
+                  Navigator.pushNamedAndRemoveUntil(
+                    context,
+                    ProfileScreenView.routeName,
+                        (route) => true,
+                  );
                 },
               ),
               Expanded(

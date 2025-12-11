@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../Core/Constants/Constans.dart';
 import '../../Home_Screen_View/Widgets/Student_Data.dart';
+import '../../Profile_Screen_View/Profile_Screen.dart';
 
 class ViewApplication extends StatefulWidget {
   static String routeName = 'ViewApplication';
@@ -35,11 +36,12 @@ class _ViewApplicationState extends State<ViewApplication> {
               StudentName: 'IKROO DEV',
               StudentRollNo: '12',
               StudentFiled: "Pre Engineering",
-              StudentPic: 'assets/Profile.jpeg', onpress: () {  },
-             // onpress: (), {
-               // Navigator.pushNamedAndRemoveUntil(context, ProfileScreenView.routeName, (route) => true
-               // );
-             // },
+              StudentPic: 'assets/Profile.jpeg',
+              onpress: () {
+                Navigator.pushNamedAndRemoveUntil(
+                    context, ProfileScreenView.routeName, (route) => true
+                );
+              }
             ),
             Expanded(
                 child: SingleChildScrollView(

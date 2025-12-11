@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../Core/Constants/Constans.dart';
 import '../Home_Screen_View/Widgets/Student_Data.dart';
+import '../Profile_Screen_View/Profile_Screen.dart';
 import 'Widget/Custom_Container.dart';
 
 
@@ -33,8 +34,8 @@ class _LmsNotificationViewState extends State<LmsNotificationView> {
                 StudentFiled: 'Pre Engineering',
                 StudentPic: 'assets/Profile.jpeg',
                 onpress: () {
-                  // Navigator.pushNamedAndRemoveUntil(context, ProfileScreenView.routeName, (route) => true
-                  // );
+                  Navigator.pushNamedAndRemoveUntil(context, ProfileScreenView.routeName, (route) => true
+                  );
                 }
             ),
             Expanded(

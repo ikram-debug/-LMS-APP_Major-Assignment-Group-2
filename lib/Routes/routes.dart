@@ -15,6 +15,8 @@ import "../View/Forms/Student_Affidavit/Student_Affidavit.dart";
 import "../View/Home_Screen_View/Home_Screen.dart";
 import "../View/LMS_Notificstion-Screen/LMS_Notification_View.dart";
 import "../View/Login_Screen_View/LoginScreen.dart";
+import "../View/My_Class_Screen/Attendence_Screen/Attendence Screen View.dart";
+import "../View/Profile_Screen_View/Profile_Screen.dart";
 import "../View/SMS_Notification_Screen/SMS_Notification_View.dart";
 import "../View/Splash_Screen_View/SplashScreen.dart";
 import "../View/Student_HandBook_Screen/Student_HandBook_View.dart";
@@ -42,5 +44,8 @@ Map<String,WidgetBuilder> routes = {
   FeeScheduleView.routeName :(Context) => FeeScheduleView(),
   SemestartRegistrationView.routeName :(Context) => SemestartRegistrationView(),
   ChangePasswordView.routeName :(Context) => ChangePasswordView(),
+  ProfileScreenView.routeName :(Context) => ProfileScreenView(),
+  AttendenceView.routeName :(Context) => AttendenceView(),
+
   //Ikram-debug set
 };

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../Core/Constants/Constans.dart';
 import '../Home_Screen_View/Widgets/Student_Data.dart';
+import '../Profile_Screen_View/Profile_Screen.dart';
 import 'Examination_Screen/Detail_Screen/Class_6th_Result.dart';
 import 'Examination_Screen/Detail_Screen/Class_7th_Result.dart';
 import 'Examination_Screen/Detail_Screen/Class_8th_Result.dart';
@@ -43,8 +44,8 @@ class _ExaminationScreenState extends State<ExaminationView> {
                 StudentFiled: 'Pre Engineering',
                 StudentPic: 'assets/Profile.jpeg',
                 onpress: () {
-                  // Navigator.pushNamedAndRemoveUntil(context, ProfileScreenView.routeName, (route) => true
-                  // );
+                  Navigator.pushNamedAndRemoveUntil(context, ProfileScreenView.routeName, (route) => true
+                  );
                 }
             ),
             Expanded(

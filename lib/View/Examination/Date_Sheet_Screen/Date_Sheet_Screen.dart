@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../../../Core/Constants/Constans.dart';
 import '../../../Model/Date_Sheet.dart';
 import '../../Home_Screen_View/Widgets/Student_Data.dart';
+import '../../Profile_Screen_View/Profile_Screen.dart';
 
 class DateScheetScreenView extends StatefulWidget {
   static String routeName = 'DateScheetScreenView';
@@ -39,8 +40,8 @@ class _DateScheetScreenViewState extends State<DateScheetScreenView> {
                 StudentFiled: 'Pre Engineering',
                 StudentPic: 'assets/Profile.jpeg',
                 onpress: () {
-                  // Navigator.pushNamedAndRemoveUntil(context, ProfileScreenView.routeName, (route) => true
-                  // );
+                  Navigator.pushNamedAndRemoveUntil(context, ProfileScreenView.routeName, (route) => true
+                  );
                 }
             ),
             Expanded(

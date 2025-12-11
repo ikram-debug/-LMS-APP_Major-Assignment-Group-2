@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../Core/Constants/Constans.dart';
 import '../../../Model/Fee_Data.dart';
 import '../../Home_Screen_View/Widgets/Student_Data.dart';
+import '../../Profile_Screen_View/Profile_Screen.dart';
 import 'Widgets/Custom_Button.dart';
 import 'Widgets/Custom_Row.dart';
 
@@ -46,9 +47,9 @@ class _FeeScreenViewState extends State<FeeScreenView> {
                 StudentFiled: 'Pre Engineering',
                 StudentPic: 'assets/Profile.jpeg',
                 onpress: () {
-                  // Navigator.pushNamedAndRemoveUntil(
-                  //     context, ProfileScreenView.routeName, (route) => true
-                  // );
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, ProfileScreenView.routeName, (route) => true
+                  );
                 }
             ),
             Expanded(

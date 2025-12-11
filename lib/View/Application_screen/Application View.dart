@@ -4,6 +4,7 @@ import '../../Core/Constants/Constans.dart';
 import '../../Core/Widgets/Custom_Button2.dart';
 import '../Home_Screen_View/Home_Screen.dart';
 import '../Home_Screen_View/Widgets/Student_Data.dart';
+import '../Profile_Screen_View/Profile_Screen.dart';
 import 'View_Application_Screen/View_Application..dart';
 
 class ApplicationView extends StatefulWidget {
@@ -57,11 +58,11 @@ class _ApplicationViewState extends State<ApplicationView> {
                   StudentRollNo:'12',
                   StudentFiled: 'Pre Engineering',
                   StudentPic: 'assets/Profile.jpeg',
-                onpress: () {  },
-                 // onpress: () {
-                   // Navigator.pushNamedAndRemoveUntil(context, ProfileScreenView.routeName, (route) => true
-                 //   );
-                 // }
+                onpress: () {
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, ProfileScreenView.routeName, (route) => true
+                  );
+                }
               ),
               Expanded(
                 child: SingleChildScrollView(

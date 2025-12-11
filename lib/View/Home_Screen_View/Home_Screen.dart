@@ -12,6 +12,8 @@ import '../Fee&Finance/Samister_Registration_Screen/Samister_Registration_View.d
 import '../Forms/Student_Affidavit/Student_Affidavit.dart';
 import '../LMS_Notificstion-Screen/LMS_Notification_View.dart';
 import '../Login_Screen_View/LoginScreen.dart';
+import '../My_Class_Screen/Attendence_Screen/Attendence Screen View.dart';
+import '../Profile_Screen_View/Profile_Screen.dart';
 import '../SMS_Notification_Screen/SMS_Notification_View.dart';
 import '../Student_HandBook_Screen/Student_HandBook_View.dart';
 import 'Widgets/Home_Card.dart';
@@ -424,8 +426,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                 StudentFiled: 'Pre Engineering',
                 StudentPic: 'assets/Profile.jpeg',
                 onpress: () {
-                  // Navigator.pushNamedAndRemoveUntil(context,ProfileScreenView.routeName,(route) => true
-                  // );
+                  Navigator.pushNamedAndRemoveUntil(context,ProfileScreenView.routeName,(route) => true
+                  );
                 }
             ),
             SingleChildScrollView(
@@ -523,8 +525,8 @@ class _HomeScreenViewState extends State<HomeScreenView> {
                           icon: 'assets/Attendence.svg',
                           title: 'Attendence',
                           onpress: () {
-                            // Navigator.pushNamedAndRemoveUntil(context, AttendenceView.routeName, (route) => true
-                            // );
+                            Navigator.pushNamedAndRemoveUntil(context, AttendenceView.routeName, (route) => true
+                            );
                           },
                         ),
                         HomeCard(
