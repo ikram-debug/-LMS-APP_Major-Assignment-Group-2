@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../Core/Constants/Constans.dart';
 
-import '../../Core/Constants/Constans.dart';
+
 
 class FeeScheduleView extends StatefulWidget {
   static String routeName = 'FeeScheduleView';

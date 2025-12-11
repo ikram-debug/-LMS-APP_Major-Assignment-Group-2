@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../Core/Constants/Constans.dart';
-import '../../Model/Fee_Data.dart';
-import '../Home_Screen_View/Widgets/Student_Data.dart';
+
+import '../../../Core/Constants/Constans.dart';
+import '../../../Model/Fee_Data.dart';
+import '../../Home_Screen_View/Widgets/Student_Data.dart';
 import 'Widgets/Custom_Button.dart';
 import 'Widgets/Custom_Row.dart';
 
